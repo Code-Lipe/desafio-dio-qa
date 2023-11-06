@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>BAJ</projectKey>
+    <exportDate>2023-11-06 20:14:49 UTC</exportDate>
+    <folders>
+        <folder fullPath="Login" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="111398594" key="BAJ-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Felipe de Oliveira Santos</createdBy>
+            <createdOn>2023-11-06 19:18:16 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues>
+                <issue>
+                    <key>BAJ-2</key>
+                    <summary><![CDATA[Como usuário desejo acessar a página de login do aplicativo a fim de visualizar opções de login, cadastro e redefinição de senha]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Cliente sem cadastro tenta fazer login]]></name>
+            <objective><![CDATA[Verificar funcionalidade de login]]></objective>
+            <owner>712020:0e47414c-3a4f-4e9b-a198-09ef7065925f</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar url X]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio deve visualizar tela de login]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio digita username no campo username]]></description>
+                        <expectedResult><![CDATA[O campo deve ser valido ]]></expectedResult>
+                        <testData><![CDATA[&quot;Felipe&quot;]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="111399072" key="BAJ-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Felipe de Oliveira Santos</createdBy>
+            <createdOn>2023-11-06 19:31:28 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues>
+                <issue>
+                    <key>BAJ-3</key>
+                    <summary><![CDATA[Como o usuário desejo preencher formulário para criação de conta no aplicativo]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Funcionalidade de login]]></name>
+            <owner>712020:0e47414c-3a4f-4e9b-a198-09ef7065925f</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente sem cadastro deseja criar conta]]></description>
+                        <expectedResult><![CDATA[Op&ccedil;&atilde;o de criar conta]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Cliente sem cadastro tenta fazer login]]></description>
+                        <expectedResult><![CDATA[Aviso de conta invalida]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="111400310" key="BAJ-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Felipe de Oliveira Santos</createdBy>
+            <createdOn>2023-11-06 19:55:06 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Usuário deverá visualizar a tela de criação]]></name>
+            <owner>712020:0e47414c-3a4f-4e9b-a198-09ef7065925f</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de login
+And não esteja cadastrado no sistema
+When clicar em 'criar conta'
+Then séra redirecionado para uma tela de criação de nova conta]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="111400442" key="BAJ-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Felipe de Oliveira Santos</createdBy>
+            <createdOn>2023-11-06 20:02:59 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Login]]></folder>
+            <issues>
+                <issue>
+                    <key>BAJ-3</key>
+                    <summary><![CDATA[Como o usuário desejo preencher formulário para criação de conta no aplicativo]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[Usuário deverá visualizar entradas]]></name>
+            <owner>712020:0e47414c-3a4f-4e9b-a198-09ef7065925f</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na aba de criação de conta
+And que o cliente visualize as entradas de dados
+When preenchendo corretamente os dados
+Then o cadastro sera concluído]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
